@@ -1,9 +1,5 @@
-# React TypeScript Starter Pack
+# Todos 
 
-To use this template click `Use this template`
+Interactive app created using functional components, React Hooks, routing, localStorage. Implemented sorting, filtering, breadcrumbs.
 
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+- DEMO LINK [https://taras-kozii.github.io/Todos-App/]
