@@ -18,9 +18,6 @@ export const NewTodoForm: React.FC<Props> = React.memo(
       setTitle('');
     };
 
-    // eslint-disable-next-line no-console
-    console.log('render Header');
-
     return (
       <header className="header">
         <h1>todos</h1>

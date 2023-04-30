@@ -24,6 +24,7 @@ export const TodoItem: React.FC<Props> = React.memo(({
   const handleKeyUp = (key: string) => {
     if (key === 'Enter' && !value.length) {
       onRemove(id);
+      onUpdateList(id, 'title', value);
     }
 
     if (key === 'Enter') {
@@ -42,6 +43,7 @@ export const TodoItem: React.FC<Props> = React.memo(({
   const handleBlur = () => {
     if (!value.length) {
       onRemove(id);
+      onUpdateList(id, 'title', value);
     }
 
     setNewTitle(value);

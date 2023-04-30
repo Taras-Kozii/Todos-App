@@ -41,7 +41,7 @@ export const App: React.FC = () => {
   const updateInitialTodos = (
     id: number, prop: string, value?: string | boolean,
   ) => {
-    const todos = initialTodos.map(item => {
+    let todos = initialTodos.map(item => {
       if (item.id !== id) {
         return item;
       }
@@ -52,7 +52,9 @@ export const App: React.FC = () => {
       };
     });
 
+    todos = [...todos].filter(todo => todo.title.length > 0);
     setInitialTodos(todos);
+    getActiveTodos();
   };
 
   const toggleTodo = (todoId: number, status: boolean) => {
